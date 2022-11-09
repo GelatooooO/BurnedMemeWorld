@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 8vh;
+    top: 0;
+    left: 0;
+    background: #000;
+    color: #fff;
+    padding: 0 2rem;
+}
+
+nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 2rem;
+}
+
+.toggle {
+    display: none;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    width: 550px;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn {
+    border: 0;
+    background: pink;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+}
+
+.btn.btn-secondary {
+    background: transparent;
+    border: 2px solid pink;
+    color: #fff;
+}
+
+/* Section Hero */
+.hero {
+    height: 100vh;
+    background: url('Sh1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@media all and (max-width: 991px) {
+
+    header {
+        background: transparent;
+    }
+
+    .toggle {
+        display: block;
+        font-size: 2rem;
+        cursor: pointer;
+        position: relative;
+        z-index: 20;
+    }
+
+    .logo {
+        position: relative;
+        z-index: 20;
+    }
+
+    .ouvrir {
+        display: block;
+    }
+
+    .fermer {
+        display: none;
+    }
+
+    .open .ouvrir {
+        display: none;
+    }
+
+    .open .fermer {
+        display: block;
+    }
+
+    .menu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: #000;
+        flex-direction: column;
+        padding: 2rem;
+        justify-content: space-around;
+        transform: translateX(-100%);
+        transition: transform 1s;
+    }
+
+    .menu li a {
+        font-size: 2rem;
+    }
+
+    .btn {
+        font-size: 2rem;
+    }
+
+    .open .menu {
+        transform: translateX(0);
+    }
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "rubik",sans-serif;
+  }
+  body{
+    background: #333;
+  }
+  .container{
+    background: url(Sh7.png) no-repeat center;
+    background-size: cover;
+    padding: 100px 40px;
+    text-align: center;
+    color: white;
+  }
+  .container p {
+    max-width: 600px;
+    margin: 40px auto;
+    font-size: 15px;
+    font-weight: 300;
+  }
+  .email-box{
+    height: 40px;
+    justify-content: center;
+    display: flex; /*its better to use inline-flex*/
+  }
+  .email-box i{
+    background: #2f3542;
+    width: 40px;
+    line-height: 40px;
+  }
+  .tbox,.btn1 {
+    border: none;
+    outline: none;
+  }
+  .tbox{
+    width: 0px;
+    transition: 0.6s;
+  }
+  .email-box:hover > .tbox,.tbox:focus{
+    width: 260px;
+    padding: 0 10px;
+  }
+  .btn1 {
+    background: #2f3542;
+    color: white;
+    padding: 0 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  
+img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-txt {
+    font-size: 60px;
+    font-weight: 700;
+    color: white;
+    padding: 10px 150px;
+    padding-top: 200px;
+    padding-bottom: 40px;
+    text-justify: auto;
+    text-transform: uppercase;
+    text-shadow:  0 10px 15px rgba(0, 0, 0, 0.336);
+  }
+  .hero-txt span {
+    color: rgb(252, 34, 6); 
+  }
+  .btn {
+    text-decoration: none;
+    font-size: 30px;
+    padding-top: 40%;
+    margin-left: 380px;
+    color: white;
+    padding: 10px 20px;
+    background-color: rgb(252, 34, 6);
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -ms-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+
+  }
+
+  @media all and (max-width:600px){
+
+  .hero-txt {
+    font-size: 47px;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+  }
+
+  .btn {
+    font-size: 20px;
+    margin-left: 105px;
+    padding: 10px 20px;
+  }
+
+}
